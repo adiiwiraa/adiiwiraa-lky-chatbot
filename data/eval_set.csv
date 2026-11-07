@@ -1,0 +1,11 @@
+question,gold_doc,gold_keyword,answerable
+"When did Singapore join Malaysia and when did it separate?",wikipedia-state-of-singapore-malaysia,"16 September 1963",true
+"Why did Singapore separate from Malaysia?",wikipedia-state-of-singapore-malaysia,"political, racial and economic",true
+"What is Singapore's policy on meritocracy?",wikipedia-people-s-action-party,meritocracy,true
+"What is National Service in Singapore?",wikipedia-national-service-in-singapore,National Service,true
+"What is the role of the Housing and Development Board?",wikipedia-housing-and-development-board,public housing,true
+"What was Singapore's policy on bilingualism?",wikipedia-language-planning-and-policy-in-singapore,bilingual,true
+"Who succeeded Lee Kuan Yew as Prime Minister?",wikipedia-lee-kuan-yew,Goh Chok Tong,true
+"How did Singapore approach relations with China?",wikipedia-china-singapore-relations,China,true
+"What is the best recipe for chicken rice?",,,false
+"Who won the 2024 United States presidential election?",,,false

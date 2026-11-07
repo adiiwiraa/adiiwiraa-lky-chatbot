@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+db/
+__pycache__/
+*.pyc
+data/pdfs/
+.pytest_cache/
+AGENTS.md
+lky_runbook.md
+
+.pytest_cache/

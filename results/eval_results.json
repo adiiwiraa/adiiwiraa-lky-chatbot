@@ -1,0 +1,434 @@
+{
+  "generated_at": "2026-11-07T08:37:01+00:00",
+  "model": "claude-sonnet-4.6",
+  "judge_model": "gpt-5.6-luna",
+  "top_k": 5,
+  "score_threshold": 0.35,
+  "documents": 12,
+  "chunks": 372,
+  "metrics": {
+    "n_questions": 10,
+    "n_answerable": 8,
+    "n_unanswerable": 2,
+    "recall_at_5": 1.0,
+    "mrr": 1.0,
+    "correct_refusal_rate": 1.0,
+    "false_refusal_rate": 0.0,
+    "flagged_quote_share": 0.0,
+    "judge_groundedness": 4.875,
+    "judge_relevance": 5.0,
+    "judge_faithfulness": 4.875
+  },
+  "questions": [
+    {
+      "question": "When did Singapore join Malaysia and when did it separate?",
+      "answerable": true,
+      "gold_doc": "wikipedia-state-of-singapore-malaysia",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "Based on the available sources, I can answer this directly.\n\nSingapore joined Malaysia on **16 September 1963**, when it merged with the Federation of Malaya, along with Sabah and Sarawak. [Documented] [State of Singapore (Malaysia) > Overview]\n\nSingapore then separated from Malaysia and became a sovereign independent state on **9 August 1965**, following the signing of the Separation Agreement on 7 August 1965. [Documented] [State of Singapore (Malaysia) > Overview]\n\nThe period of Singapore's membership in Malaysia therefore lasted just under two years. The separation came about due to, as the sources describe, \"political, racial and economic conflicts\" between the PAP-led Singapore government and the Alliance Party-led Malaysian federal government, as well as communal tensions that led to race riots. [Documented] [State of Singapore (Malaysia) > Overview]\n\nIt is worth noting that the public narrative in Singapore, shaped by limited information at the time, was that the country had been **abruptly expelled**. The release of Goh Keng Swee's records — the so-called Albatross file, made public in December 2025 — has since provided a fuller account of the separation negotiations. [Documented] [State of Singapore (Malaysia) > Overview]",
+      "sources": [
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Merger negotiations",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.801
+        },
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.792
+        },
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Foreign relations",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.761
+        },
+        {
+          "title": "History of Singapore",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/History_of_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.749
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All factual claims (merger date 16 September 1963, separation date 9 August 1965, Separation Agreement signed 7 August 1965, political/racial/economic conflicts, race riots, Albatross file release in December 2025) are directly supported by the provided context. No invented quotations or unsupported claims are present."
+      }
+    },
+    {
+      "question": "Why did Singapore separate from Malaysia?",
+      "answerable": true,
+      "gold_doc": "wikipedia-state-of-singapore-malaysia",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "# Singapore's Separation from Malaysia\n\nThe separation was the result of several compounding conflicts — political, racial, and economic — that made the merger increasingly untenable.\n\n## Political Conflicts\n\nBoth sides violated the spirit of the original arrangement by contesting in each other's political arenas. The Alliance Party ran candidates in Singapore in 1963, and my People's Action Party contested in the 1964 Malaysian elections. This created direct confrontation between the two governments. [Documented, State of Singapore (Malaysia) > Overview]\n\n## Racial Tensions\n\nCommunal tensions between Malay and Chinese populations in Singapore erupted into race riots in 1964. It was ultimately the desire to avoid further bloodshed that pushed Tunku Abdul Rahman toward the separation decision. [Documented, History of Singapore > Separation]\n\n## Economic Disputes\n\nThe Federal Government's tax proposals and delays in Sabah development loans led Malaysia's Finance Minister Tan Siew Sin to threaten raising Singapore's revenue contribution from **40 to 60 per cent** — a serious point of contention. [Documented, State of Singapore (Malaysia) > Overview]\n\n## The Final Decision\n\nTunku Abdul Rahman made the call to separate. Critically, my finance minister **Goh Keng Swee**, having grown skeptical of the merger's economic benefits, convinced me that separation had to happen. [Documented, History of Singapore > Separation]\n\nI will not pretend it was easy. As I said at the time, it was *\"a moment of anguish.\"* [Documented, History of Singapore > Separation]",
+      "sources": [
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.732
+        },
+        {
+          "title": "History of Singapore",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/History_of_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.711
+        },
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Merger negotiations",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.701
+        },
+        {
+          "title": "History of Singapore",
+          "section": "Separation",
+          "url": "https://en.wikipedia.org/wiki/History_of_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.695
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "Every factual claim maps directly to the provided context chunks. The quote attributed to Lee Kuan Yew is taken verbatim from the context. No invented facts, unsupported claims, or fabricated opinions are present."
+      }
+    },
+    {
+      "question": "What is Singapore's policy on meritocracy?",
+      "answerable": true,
+      "gold_doc": "wikipedia-people-s-action-party",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "## Singapore's Meritocracy Policy\n\nBased on the available sources, meritocracy has been a foundational principle of Singapore's governance under the PAP.\n\n**As a Core Ideology**\n\nMeritocracy is identified as one of four major ideologies of the PAP, alongside pragmatism, multiracialism, and Asian values/communitarianism. [Documented] [People's Action Party > Social policies]\n\n**In Economic Policy**\n\nFree-market policies have been implemented \"as part of the wider implementation of a meritocracy in civil society\" since the 1980s, and Singapore frequently ranks highly on indices of economic freedom. [Documented] [People's Action Party > Economic policies]\n\n**In Governance**\n\nThe concept of a \"Jeffersonian natural aristocracy\" - maintaining a capable governing elite - has been connected to meritocratic thinking. Prime Minister Lee Hsien Loong spoke about the need to maintain such a system \"to instill a culture of respect and to avoid anarchy,\" while also warning against allowing a \"disconnect between the masses and the elite.\" [Documented] [People's Action Party > Social policies]\n\n**A Note of Caution**\n\nThe available sources give me only an outline of meritocracy as a stated principle. The deeper mechanics of how it operates in education, hiring, and public policy are not fully covered in the passages available to me, and I will not speculate beyond what is documented.",
+      "sources": [
+        {
+          "title": "People's Action Party",
+          "section": "Economic policies",
+          "url": "https://en.wikipedia.org/wiki/People's_Action_Party",
+          "doc_type": "secondary",
+          "similarity": 0.59
+        },
+        {
+          "title": "People's Action Party",
+          "section": "Social policies",
+          "url": "https://en.wikipedia.org/wiki/People's_Action_Party",
+          "doc_type": "secondary",
+          "similarity": 0.576
+        },
+        {
+          "title": "National service in Singapore",
+          "section": "Exemption",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.56
+        },
+        {
+          "title": "State of Singapore (Malaysia)",
+          "section": "Security",
+          "url": "https://en.wikipedia.org/wiki/State_of_Singapore_(Malaysia)",
+          "doc_type": "secondary",
+          "similarity": 0.539
+        },
+        {
+          "title": "Lee Kuan Yew",
+          "section": "1980s",
+          "url": "https://en.wikiquote.org/wiki/Lee_Kuan_Yew",
+          "doc_type": "quotes",
+          "similarity": 0.537
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All factual claims are directly supported by the provided context passages. The answer accurately references meritocracy as one of four PAP ideologies, its link to free-market policies since the 1980s, and the Lee Hsien Loong quotes about natural aristocracy and elite-mass disconnect. No invented quotations or unsupported claims are present, and the answer appropriately flags the limits of the available context."
+      }
+    },
+    {
+      "question": "What is National Service in Singapore?",
+      "answerable": true,
+      "gold_doc": "wikipedia-national-service-in-singapore",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "# National Service in Singapore\n\nBased on the available sources, I can give you a solid overview.\n\n## What It Is\n\nNational Service (NS) is Singapore's active conscription system, requiring **all qualified male Singaporean citizens and second-generation permanent residents** to serve a period of active duty military service in the uniformed services. [Documented - National service in Singapore > Overview]\n\n## Origins\n\nConscription was first instituted in **1967**, shortly after Singapore gained independence in 1965. The government's rationale was straightforward: **\"a strong military is an indispensable guarantor of the country's continued sovereignty.\"** [Documented - National service in Singapore > Overview]\n\n## How It Works\n\n- Eligible males serve **two years of full-time active duty** as National Servicemen Full-time (NSFs) [Documented - National service in Singapore > Overview]\n- They serve in one of three bodies: the **Singapore Armed Forces (SAF), Singapore Police Force (SPF), or Singapore Civil Defence Force (SCDF)** [Documented - National service in Singapore > Overview]\n- After full-time service, they transition to **part-time reservist duty for 10 years** [Documented - National service in Singapore > Personnel]\n\n## Scale\n\nNearly **20,000 conscripts** are enlisted every year, with a total reservist force of approximately **352,500 NSmen** as of 2022-23. [Documented - National service in Singapore > Personnel]\n\nThe majority serve in the **Singapore Army**, given its larger manpower requirements compared to other branches. [Documented - National service in Singapore > Overview]",
+      "sources": [
+        {
+          "title": "National service in Singapore",
+          "section": "Military service",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.743
+        },
+        {
+          "title": "National service in Singapore",
+          "section": "National Service Ranks",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.708
+        },
+        {
+          "title": "National service in Singapore",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.668
+        },
+        {
+          "title": "National service in Singapore",
+          "section": "See also",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.645
+        },
+        {
+          "title": "National service in Singapore",
+          "section": "Personnel",
+          "url": "https://en.wikipedia.org/wiki/National_service_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.636
+        }
+      ],
+      "judge": {
+        "groundedness": 4,
+        "relevance": 5,
+        "faithfulness": 4,
+        "reason": "The answer accurately reflects context. The quoted phrase 'a strong military is an indispensable guarantor of the country's continued sovereignty' appears verbatim in the context, so it is not invented. Minor deduction: the answer presents the quote as a direct government statement without noting it is a paraphrase from the Wikipedia-style source, but this is a minor framing issue, not a factual error. All other claims are well-supported by the provided context."
+      }
+    },
+    {
+      "question": "What is the role of the Housing and Development Board?",
+      "answerable": true,
+      "gold_doc": "wikipedia-housing-and-development-board",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "Based on the available context, I can outline the role of the Housing and Development Board (HDB):\n\n**Core Mandate**\nThe HDB is a statutory board under the Ministry of National Development, primarily responsible for public housing in Singapore. [Documented - Housing and Development Board > Overview]\n\n**Key Responsibilities include:**\n\n- Planning and constructing or upgrading buildings [Documented - Housing and Development Board > Responsibilities]\n- Clearing slums and resettling residents [Documented - Housing and Development Board > Responsibilities]\n- Managing and maintaining its estates and buildings [Documented - Housing and Development Board > Responsibilities]\n- Providing loans to people to buy land or public housing [Documented - Housing and Development Board > Responsibilities]\n- Carrying out land reclamation works [Documented - Housing and Development Board > Responsibilities]\n- Handling infrastructure for Singapore's national resource stockpiles [Documented - Housing and Development Board > Responsibilities]\n\n**Historical Evolution**\nWhen established in 1960, the HDB focused on emergency housing and resettlement of kampong residents. Over time, it shifted toward building better-quality flats for sale, improving community cohesion, and introducing redevelopment schemes for mature estates. [Documented - Housing and Development Board > Overview]\n\nThe available sources do not go beyond what is described above regarding my personal views on the HDB's role.",
+      "sources": [
+        {
+          "title": "Housing and Development Board",
+          "section": "Responsibilities",
+          "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board",
+          "doc_type": "secondary",
+          "similarity": 0.67
+        },
+        {
+          "title": "Housing and Development Board",
+          "section": "External links",
+          "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board",
+          "doc_type": "secondary",
+          "similarity": 0.626
+        },
+        {
+          "title": "Housing and Development Board",
+          "section": "Organisation",
+          "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board",
+          "doc_type": "secondary",
+          "similarity": 0.62
+        },
+        {
+          "title": "Housing and Development Board",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board",
+          "doc_type": "secondary",
+          "similarity": 0.594
+        },
+        {
+          "title": "Housing and Development Board",
+          "section": "The 1960s to 1980s",
+          "url": "https://en.wikipedia.org/wiki/Housing_and_Development_Board",
+          "doc_type": "secondary",
+          "similarity": 0.462
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All factual claims are directly supported by the provided context chunks; no invented quotations or unsupported opinions are present, and the answer fully addresses the question about HDB's role."
+      }
+    },
+    {
+      "question": "What was Singapore's policy on bilingualism?",
+      "answerable": true,
+      "gold_doc": "wikipedia-language-planning-and-policy-in-singapore",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "# Singapore's Bilingual Education Policy\n\nBased on the available sources, I can outline the key elements of Singapore's bilingualism policy.\n\n## Core Structure\n\nUnder the Bilingual Policy, all students are educated in **English as their first language**, while also being required to learn their **Mother Tongue as a second language**. Students are offered Mandarin Chinese, Malay, or Tamil depending on their father's ethnicity. [Documented - Language planning and policy in Singapore > Aims]\n\nWhen vernacular schools were closed in 1987, the Ministry of Education implemented the National System of Education to enforce this framework. [Documented - Language planning and policy in Singapore > Bilingual Education Policy]\n\n## Underlying Rationale\n\nThe policy rested on a clear division of roles: English served as the **\"language of commerce\"** while the ethnic language was the **\"carrier of culture.\"** [Documented - Language planning and policy in Singapore > Aims]\n\nThere was also a deliberate concern about protecting Asian identities against growing Western influence and the potential **de-culturalisation** of Singaporeans. [Documented - Language planning and policy in Singapore > Aims]\n\n## Acknowledged Challenges\n\nThe policy has faced real difficulties. An increasing number of Singaporeans began speaking English at home, leading to **declining standards in Mother Tongue** command. [Documented - Language planning and policy in Singapore > Challenges]\n\nThe policy has also been critiqued for being designed top-down, without sufficiently accounting for the feelings and willingness of the recipients. [Secondary - Language planning and policy in Singapore > Overview]",
+      "sources": [
+        {
+          "title": "Language planning and policy in Singapore",
+          "section": "Challenges and solutions of Bilingual Policy",
+          "url": "https://en.wikipedia.org/wiki/Language_planning_and_policy_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.779
+        },
+        {
+          "title": "Language planning and policy in Singapore",
+          "section": "Bilingual Education Policy",
+          "url": "https://en.wikipedia.org/wiki/Language_planning_and_policy_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.751
+        },
+        {
+          "title": "Language planning and policy in Singapore",
+          "section": "Tamil",
+          "url": "https://en.wikipedia.org/wiki/Language_planning_and_policy_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.747
+        },
+        {
+          "title": "Language planning and policy in Singapore",
+          "section": "Aims",
+          "url": "https://en.wikipedia.org/wiki/Language_planning_and_policy_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.738
+        },
+        {
+          "title": "Language planning and policy in Singapore",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/Language_planning_and_policy_in_Singapore",
+          "doc_type": "secondary",
+          "similarity": 0.719
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All factual claims in the answer are directly supported by the provided context chunks. The quoted phrases 'language of commerce' and 'carrier of culture' appear verbatim in context [4]. The 1987 school closure, ethnic mother tongue assignments, declining standards, and top-down critique are all present in the context. No invented quotations or unsupported claims are present."
+      }
+    },
+    {
+      "question": "Who succeeded Lee Kuan Yew as Prime Minister?",
+      "answerable": true,
+      "gold_doc": "wikipedia-lee-kuan-yew",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "Based on the available sources, **Goh Chok Tong** succeeded me as Prime Minister of Singapore. [Documented]\n\nAs stated in the record: I stepped down on 28 November 1990, handing over the prime ministership to Goh Chok Tong, who was elected as the new prime minister by the younger ministers then in office. [Lee Kuan Yew > Senior Minister (1990–2004)]\n\nThis was a significant moment — it was the **first leadership transition since independence**, and by that point I had become the world's longest-serving prime minister. [Documented] I did not fully leave government, however. I remained in the Cabinet in a non-executive **Senior Minister** role, which I described as advisory. [Lee Kuan Yew > Senior Minister (1990–2004)]",
+      "sources": [
+        {
+          "title": "Lee Kuan Yew",
+          "section": "Senior Minister (1990–2004)",
+          "url": "https://en.wikipedia.org/wiki/Lee_Kuan_Yew",
+          "doc_type": "secondary",
+          "similarity": 0.72
+        },
+        {
+          "title": "Lee Kuan Yew",
+          "section": "Overview",
+          "url": "https://en.wikiquote.org/wiki/Lee_Kuan_Yew",
+          "doc_type": "quotes",
+          "similarity": 0.715
+        },
+        {
+          "title": "Lee Kuan Yew",
+          "section": "External links",
+          "url": "https://en.wikiquote.org/wiki/Lee_Kuan_Yew",
+          "doc_type": "quotes",
+          "similarity": 0.664
+        },
+        {
+          "title": "Lee Kuan Yew",
+          "section": "See also",
+          "url": "https://en.wikipedia.org/wiki/Lee_Kuan_Yew",
+          "doc_type": "secondary",
+          "similarity": 0.657
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All factual claims are directly supported by the context: Goh Chok Tong's succession, the date of 28 November 1990, the first leadership transition since independence, the world's longest-serving PM status, and the Senior Minister advisory role. No invented quotations or unsupported claims."
+      }
+    },
+    {
+      "question": "How did Singapore approach relations with China?",
+      "answerable": true,
+      "gold_doc": "wikipedia-china-singapore-relations",
+      "retrieval_rank": 1,
+      "refused": false,
+      "flagged_quotes": [],
+      "answer": "# Singapore's Approach to Relations with China\n\nLet me speak plainly about how I handled this matter.\n\n## Avoiding the \"Third China\" Perception\n\nMy foremost concern was ensuring that Singapore — with its predominantly ethnic Chinese population — was never seen as a \"Third China\" alongside Taiwan and the PRC. [Documented] This caution stemmed from Singapore's experiences with communism, the ongoing Vietnam War, and domestic political factors. [China–Singapore relations > Post–Singapore independence] When I made official visits to China from 1976 onwards, I conducted them in English precisely to reaffirm that I represented Singapore, not some extension of Chinese civilisation. [Documented] [China–Singapore relations > Post–Singapore independence]\n\n## Strategic Sequencing\n\nWe deliberately delayed establishing formal diplomatic relations with China until other Southeast Asian nations — particularly Indonesia — had done so first. [Documented] [China–Singapore relations > Overview] Formal ties were only established on 3 October 1990, making Singapore the **last** Southeast Asian country to recognise the PRC. [Documented] [China–Singapore relations > Post–Singapore independence]\n\n## Resisting Communism\n\nDuring that era, I firmly believed in resisting communism. Having witnessed the British failure to defend Singapore and doubting American willingness to act, I welcomed the American presence as a necessary counterbalance to both the Soviet Union and China. [Documented] [China–Singapore relations > Post–Singapore independence]\n\n## Pragmatic Engagement\n\nOnce relations were established, our approach was consistently **pragmatic and interest-driven** — participating in joint industrial parks, the Belt and Road Initiative, and cooperation through ASEAN — but always on the basis of mutual respect rather than deference. [Secondary] [China–Singapore relations > Overview]\n\nWe also maintained unofficial ties with Taiwan throughout, which occasionally drew Beijing's disapproval, but reflected our commitment to **strategic independence**. [Documented] [China–Singapore relations > Overview]",
+      "sources": [
+        {
+          "title": "China–Singapore relations",
+          "section": "Overview",
+          "url": "https://en.wikipedia.org/wiki/China–Singapore_relations",
+          "doc_type": "secondary",
+          "similarity": 0.767
+        },
+        {
+          "title": "China–Singapore relations",
+          "section": "Further reading",
+          "url": "https://en.wikipedia.org/wiki/China–Singapore_relations",
+          "doc_type": "secondary",
+          "similarity": 0.761
+        },
+        {
+          "title": "China–Singapore relations",
+          "section": "Post–Singapore independence",
+          "url": "https://en.wikipedia.org/wiki/China–Singapore_relations",
+          "doc_type": "secondary",
+          "similarity": 0.747
+        },
+        {
+          "title": "China–Singapore relations",
+          "section": "External links",
+          "url": "https://en.wikipedia.org/wiki/China–Singapore_relations",
+          "doc_type": "secondary",
+          "similarity": 0.731
+        }
+      ],
+      "judge": {
+        "groundedness": 5,
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "Every factual claim in the answer is directly supported by the provided context passages. The first-person Lee Kuan Yew framing is noted but not penalized. No invented quotations or unsupported claims are present."
+      }
+    },
+    {
+      "question": "What is the best recipe for chicken rice?",
+      "answerable": false,
+      "gold_doc": "",
+      "retrieval_rank": null,
+      "refused": true,
+      "flagged_quotes": [],
+      "answer": "The documents available to me do not contain enough evidence to answer that. I will not guess or invent an opinion beyond the record.",
+      "sources": [],
+      "judge": null
+    },
+    {
+      "question": "Who won the 2024 United States presidential election?",
+      "answerable": false,
+      "gold_doc": "",
+      "retrieval_rank": null,
+      "refused": true,
+      "flagged_quotes": [],
+      "answer": "The documents available to me do not contain enough evidence to answer that. I will not guess or invent an opinion beyond the record.",
+      "sources": [],
+      "judge": null
+    }
+  ]
+}
